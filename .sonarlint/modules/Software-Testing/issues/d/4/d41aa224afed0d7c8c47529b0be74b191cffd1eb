@@ -1,0 +1,8 @@
+
+3squid:S1220""Move this file to a named package.H
+}squid:S1201!"]Either override Object.equals(Object), or totally rename the method to prevent any confusion.(ËÊò8œÄ–¯ª+H
+ksquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(°ÿéÛ8œÄ–¯ª+H
+jsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ş·Ö^8œÄ–¯ª+H
+`squid:S1126""AReplace this if-then-else statement by a single return statement.(÷Ø8œÄ–¯ª+H
+bsquid:S2259""CNullPointerException might be thrown as 'personIn' is nullable here(÷Ø8œÄ–¯ª+H
+Zsquid:S1161":Add the "@Override" annotation above this method signature(Á»›ê8œÄ–¯ª+H

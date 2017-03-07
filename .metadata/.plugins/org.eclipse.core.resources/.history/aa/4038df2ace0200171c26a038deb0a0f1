@@ -1,0 +1,14 @@
+import org.junit.Test;
+public class Customer_Tester
+{
+   private Customer testRec = new Customer("Mr", "connor1", "curran0", "0877718912", "stephencurrangmail.com");
+   
+   @Test(expected = IllegalArgumentException.class)
+   public void emailAddress()
+   {
+     testRec.EmailAddress("stephencurranGmail.com");
+ 	
+   }
+   
+   
+}
