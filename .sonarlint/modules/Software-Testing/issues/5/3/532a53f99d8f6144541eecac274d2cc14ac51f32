@@ -1,32 +1,0 @@
-
-`
-squid:S106@";Replace this usage of System.out or System.err by a logger.(úü™üûÿÿÿÿ8´š¯ª+H‰
-[
-squid:S106G";Replace this usage of System.out or System.err by a logger.(ù®×8´š¯ª+Hˆ
-`
-squid:S106>";Replace this usage of System.out or System.err by a logger.(ÈÛ°şıÿÿÿÿ8´š¯ª+H
-[
-squid:S106=";Replace this usage of System.out or System.err by a logger.(‹ÜÑ8´š¯ª+H‚
-Ksquid:S1166E"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ8´š¯ª+H‹
-4squid:S1220""Move this file to a named package.H
-{squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ïÆ¯8´š¯ª+H
-`
-squid:S1064";Replace this usage of System.out or System.err by a logger.(ú£îéùÿÿÿÿ8´š¯ª+H’
-squid:S00115	"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¥ŞµÄüÿÿÿÿ8´š¯ª+Hƒ
-{squid:S1067;"ZReduce the number of conditional operators (4) used in the expression (maximum allowed 3).(öšŞ‹8´š¯ª+H…
-squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(÷Ãªşÿÿÿÿ8´š¯ª+H
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(óİ¸8´š¯ª+Hı
-}squid:S00117/"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îı‡Çøÿÿÿÿ8´š¯ª+HŒ
-[
-squid:S106K";Replace this usage of System.out or System.err by a logger.(£´Ë¡8´š¯ª+H„
-Ksquid:S11668"%Either log or rethrow this exception.(Ä½Õåıÿÿÿÿ8´š¯ª+H“
-€squid:S1067C"ZReduce the number of conditional operators (5) used in the expression (maximum allowed 3).(´é¿ªøÿÿÿÿ8´š¯ª+Hÿ
-squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.( ¸Ïßüÿÿÿÿ8´š¯ª+Hş
-squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(æ¸×ãùÿÿÿÿ8´š¯ª+H
-[
-squid:S106N";Replace this usage of System.out or System.err by a logger.(¾¹”Ÿ8´š¯ª+H‘
-¨%squid:RedundantThrowsDeclarationCheck%"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(‚À¿Ÿ8´š¯ª+H‡
-|squid:S00115
-"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(É‡—8´š¯ª+HŠ
-}squid:S00117,"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÚéÂúÿÿÿÿ8´š¯ª+H†
-xsquid:S00117)"VRename this local variable name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÊâ®8´š¯ª+H€
