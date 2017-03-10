@@ -1,44 +1,44 @@
 
-Z
-squid:S106N";Replace this usage of System.out or System.err by a logger.(©ºÿn8ı½—¯ª+H•
-[
-squid:S106C";Replace this usage of System.out or System.err by a logger.(Ñş¤¿8ı½—¯ª+H”
-ksquid:S1226R"JIntroduce a new variable instead of reusing the parameter "emailAddress1".(ø¥•Â8ñ–ç±ª+HÈ
-usquid:S001167"SRename this field "KBString" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾Ü‡¦8®ñ°±ª+H 
-^squid:S1213:"8Move this variable to comply with Java Code Conventions.(á†•­üÿÿÿÿ8®ñ°±ª+H
-Nsquid:S1948:"(Make "KBName" transient or serializable.(á†•­üÿÿÿÿ8®ñ°±ª+H¤
-Jsquid:S1166H"%Either log or rethrow this exception.(Ä½Õåıÿÿÿÿ8ı½—¯ª+H-
-{squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(’¤è£8ı½—¯ª+H2
-3squid:S1220""Move this file to a named package.H
-_
-squid:S106r";Replace this usage of System.out or System.err by a logger.(õ…Ÿ¢úÿÿÿÿ8ı½—¯ª+H&
-rsquid:S3008"MRename this field "ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ¢ÓÎûÿÿÿÿ8ı½—¯ª+H
-Z
-squid:S106z";Replace this usage of System.out or System.err by a logger.(ù®×8ı½—¯ª+H%
-ksquid:S1226D"JIntroduce a new variable instead of reusing the parameter "emailAddress1".(ø¥•Â8ñ–ç±ª+HÉ
-psquid:S00100?"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¹İÚ8®ñ°±ª+H
-Ksquid:S1166x"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ8ı½—¯ª+H—
-Jsquid:S1166V"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ8ı½—¯ª+H.
-Ksquid:S19487"*Make "KBString" transient or serializable.(¾Ü‡¦8®ñ°±ª+H£
-vsquid:S00116"URename this field "CustomerID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ÑÈë8ı½—¯ª+H1
-xsquid:S00116:"QRename this field "KBName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á†•­üÿÿÿÿ8®ñ°±ª+H¡
-^squid:S12134"8Move this variable to comply with Java Code Conventions.(¡Œªıÿÿÿÿ8®ñ°±ª+H›
-[
-squid:S106o";Replace this usage of System.out or System.err by a logger.(ö’æ8ı½—¯ª+H™
-Z
-squid:S106Q";Replace this usage of System.out or System.err by a logger.(šüò¥8ı½—¯ª+H'
-{squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(—´Â8ı½—¯ª+H3
-Ksquid:S1166j"%Either log or rethrow this exception.(Ä½Õåıÿÿÿÿ8ı½—¯ª+H˜
-Lsquid:S19484"&Make "KBin" transient or serializable.(¡Œªıÿÿÿÿ8®ñ°±ª+H¢
-vsquid:S001164"ORename this field "KBin" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡Œªıÿÿÿÿ8®ñ°±ª+HŸ
-_
-squid:S106O";Replace this usage of System.out or System.err by a logger.(£±†àûÿÿÿÿ8ı½—¯ª+H#
-Ysquid:S12137"8Move this variable to comply with Java Code Conventions.(¾Ü‡¦8®ñ°±ª+Hœ
-_
-squid:S106p";Replace this usage of System.out or System.err by a logger.(»à¶—ÿÿÿÿÿ8ı½—¯ª+H$
+^squid:S1213:"8Move this variable to comply with Java Code Conventions.(á†•­üÿÿÿÿ8®ñ°±ª+H”
+|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(’¤è£8ı½—¯ª+H•
 `
-squid:S106f";Replace this usage of System.out or System.err by a logger.(£à´òşÿÿÿÿ8ı½—¯ª+H–
+squid:S106r";Replace this usage of System.out or System.err by a logger.(õ…Ÿ¢úÿÿÿÿ8ı½—¯ª+H–
+4squid:S1220""Move this file to a named package.H—
+Z
+squid:S106N";Replace this usage of System.out or System.err by a logger.(©ºÿn8ı½—¯ª+H˜
+`
+squid:S106p";Replace this usage of System.out or System.err by a logger.(»à¶—ÿÿÿÿÿ8ı½—¯ª+H™
+Nsquid:S1948:"(Make "KBName" transient or serializable.(á†•­üÿÿÿÿ8®ñ°±ª+Hš
+`
+squid:S106f";Replace this usage of System.out or System.err by a logger.(£à´òşÿÿÿÿ8ı½—¯ª+H›
 [
-squid:S106X";Replace this usage of System.out or System.err by a logger.(ù®×8ı½—¯ª+Hš
-Rsquid:S2387"1"phoneNumber" is the name of a field in "Person".(êµê8¬¤Û±ª+HÀ
-{squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ê‘ï8ı½—¯ª+H4
+squid:S106z";Replace this usage of System.out or System.err by a logger.(ù®×8ı½—¯ª+Hœ
+[
+squid:S106Q";Replace this usage of System.out or System.err by a logger.(šüò¥8ı½—¯ª+H
+Ksquid:S1166H"%Either log or rethrow this exception.(Ä½Õåıÿÿÿÿ8ı½—¯ª+H
+Lsquid:S19484"&Make "KBin" transient or serializable.(¡Œªıÿÿÿÿ8®ñ°±ª+HŸ
+^squid:S12134"8Move this variable to comply with Java Code Conventions.(¡Œªıÿÿÿÿ8®ñ°±ª+H 
+[
+squid:S106X";Replace this usage of System.out or System.err by a logger.(ù®×8ı½—¯ª+H¡
+[
+squid:S106C";Replace this usage of System.out or System.err by a logger.(Ñş¤¿8ı½—¯ª+H¢
+`
+squid:S106O";Replace this usage of System.out or System.err by a logger.(£±†àûÿÿÿÿ8ı½—¯ª+H£
+ksquid:S1226D"JIntroduce a new variable instead of reusing the parameter "emailAddress1".(ø¥•Â8ñ–ç±ª+H¤
+psquid:S00100?"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¹İÚ8®ñ°±ª+H¥
+usquid:S001167"SRename this field "KBString" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾Ü‡¦8®ñ°±ª+H¦
+ksquid:S1226R"JIntroduce a new variable instead of reusing the parameter "emailAddress1".(ø¥•Â8ñ–ç±ª+H§
+xsquid:S00116:"QRename this field "KBName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á†•­üÿÿÿÿ8®ñ°±ª+H¨
+Ksquid:S1166j"%Either log or rethrow this exception.(Ä½Õåıÿÿÿÿ8ı½—¯ª+H©
+ssquid:S3008"MRename this field "ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ¢ÓÎûÿÿÿÿ8ı½—¯ª+Hª
+|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(—´Â8ı½—¯ª+H«
+[
+squid:S106o";Replace this usage of System.out or System.err by a logger.(ö’æ8ı½—¯ª+H¬
+Ysquid:S12137"8Move this variable to comply with Java Code Conventions.(¾Ü‡¦8®ñ°±ª+H­
+Ksquid:S1166x"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ8ı½—¯ª+H®
+wsquid:S00116"URename this field "CustomerID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ÑÈë8ı½—¯ª+H¯
+vsquid:S001164"ORename this field "KBin" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡Œªıÿÿÿÿ8®ñ°±ª+H°
+Ksquid:S19487"*Make "KBString" transient or serializable.(¾Ü‡¦8®ñ°±ª+H±
+Rsquid:S2387"1"phoneNumber" is the name of a field in "Person".(êµê8¬¤Û±ª+H²
+Ksquid:S1166V"%Either log or rethrow this exception.(¼Ôîàùÿÿÿÿ8ı½—¯ª+H³
+|squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ê‘ï8ı½—¯ª+H´
