@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 public class Customer 
@@ -39,92 +37,55 @@ private static int ID;
   this.phoneNumber=pNo;
   this.CustomerID = ID++;
  }
-//reads in the details of the user
-	//calls in scanner class for an int
-	@SuppressWarnings({ "resource", "unused" })
-	Scanner KBin = new Scanner(System.in);
-	//creates string scanner class
-	@SuppressWarnings("resource")
-	Scanner KBString = new Scanner(System.in);
-	//creates name scanner class
-	@SuppressWarnings({ "resource", "unused" })
-	Scanner KBName = new Scanner(System.in);
-	//allows user to enter in name
-	//aloows user to enter in e-mail
-	
-	 //exception handling for email if email does not contain @ error message will occur
-	 public void EmailAddress(String emailAddress1) throws IllegalArgumentException
-	 {
-        	  try
-        	  {
-        		  System.out.println("\n\nEnter Customer E-mail: ");
-        			emailAddress1 =KBString.nextLine();
-        			throw new IllegalArgumentException("EMAIL IS INVALID.");
-        	  }
-          catch(IllegalArgumentException iEA)
-          {
-        	do{
-        	  if(!emailAddress.contains(emailRequirement))
-        	  {
-        		  
-				System.out.println("Incorrect please enter a personal email Address");
-				System.out.println("Example stephen@gmail.com");
-				
-				System.out.print("\n\nRE-enter email:");
-				emailAddress1 = KBString.nextLine();
-        	  }
-        	}while(!emailAddress.contains(emailRequirement));
-          }
-          catch(Exception e)
-        	{
-				System.out.println("An Error Occurred.");
-			}
-        emailAddress = emailAddress1;
-	 }
-	 public String getemailAddress()
-	 {
-		 return emailAddress;
-	 }
-	 public void aaphoneNumber(String phoneNum) throws IllegalArgumentException
-	 {
-  
-      	  try
-      	  {
-      		  
-      		System.out.println("\n\nCustomer phone Number: "); 
-      		phoneNumber = KBString.nextLine();
-      	  throw new IllegalArgumentException("PHONE NUMBER IS INVALID.");
-      	  }
-        catch(IllegalArgumentException iEA)
-        {
-        	do{
-        	  if(!phoneNumber.contains(phoneRequirement1) && !phoneNumber.contains(phoneRequirement2))
-        	  {
-				System.out.println("Incorrect please enter a phone number again");
-				System.out.println("+353 74 55512349 or 0877718912");
-				
-				System.out.print("\n\nRE-enter phone number:");
-				phoneNumber = KBString.nextLine();
-        	  }
-        	}while(!phoneNumber.contains(phoneRequirement1) && !phoneNumber.contains(phoneRequirement2));
-      	  
-        }
-        catch(Exception e)
-      	{
-				System.out.println("An Error Occurred.");
-			}
- 
-           phoneNumber = phoneNum;
-	  }
-	 public String getPhoneNum()
-	 {
-		 return phoneNumber;
-	 }
+ public static boolean validate_atSymbol_in_email(String email)
+ {
+   return email.contains("@");
+ }
+ public static boolean validate_email(String email)
+ {
+   return email.contains("[a-zA-z]+([ '-][a-zA-Z]+)*");
+ }
+ public static boolean check_email_has_dot(String email)
+ {
+   return email.contains(".");
+ }
+ public static boolean check_phoneNumber_contains_plus(String num)
+ {
+	 return num.contains("+");
+ }
+ public static boolean check_phoneNumber_contains_08(String num)
+ {
+	 return num.contains("08");
+ }
 
-//returns the id of the user
-protected final int getID()
+ public void SetEmail(String email1)
+ {
+	 if(validate_email(email1) && validate_atSymbol_in_email(email1) && check_email_has_dot(email1))
+	 {
+	   emailAddress = email1;
+	 }
+	 else
+	 {
+		throw new IllegalArgumentException("invalid email", null); 
+	 }
+ }
+ public void SetPhone(String phone)
+ {
+	if(check_phoneNumber_contains_plus(phone) || check_phoneNumber_contains_08(phone))
+	{
+	 phoneNumber = phone;
+	}
+	else
+	{
+		throw new IllegalArgumentException("invalid phone number", null);
+	}
+ }
+public String getEmail()
 {
-	return CustomerID;
+	return emailAddress;
 }
-
+public String getPhone()
+{
+	return phoneNumber;
+}
 }
