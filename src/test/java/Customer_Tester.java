@@ -47,11 +47,11 @@ public class Customer_Tester
 		testRec.SetPhone("0877718912");
 		assertThat(testRec.getPhone(), is(equalTo("0877718912")));
    }
-   @Test(expected = IllegalArgumentException.class)
+   @Test
    public void check_number_contains_plus_or_08()
    {
+	   thrown.expect(IllegalArgumentException.class);
 	   testRec.SetPhone("7712345679"); 
-	   assertEquals("7712345679",testRec.getPhone());
    }
    @Test
    public void check_number_contains_plus()
@@ -71,11 +71,12 @@ public class Customer_Tester
 	   testRec.SetPhone("08712345612");
 	   assertEquals("08712345612",testRec.getPhone());
    }
-   @Test(expected = IllegalArgumentException.class)
+   @Test
    public void check_that_plus_number_cannot_be_more_than_13()
    {
+	   thrown.expect(IllegalArgumentException.class);
 	   testRec.SetPhone("+35312345667123");
-	   assertEquals("+35312345667123",testRec.getPhone());
+	
    }
    @Rule
 	public ExpectedException thrown = ExpectedException.none();
