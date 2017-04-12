@@ -13,7 +13,7 @@ public class Customer_Tester
    
    @Test
    public void CheckVailedEmail()
-   {
+   { 
 	   testRec.SetEmail("stepehncurran@gmail.com");
 	   assertEquals("stepehncurran@gmail.com", testRec.getEmail());
    }
