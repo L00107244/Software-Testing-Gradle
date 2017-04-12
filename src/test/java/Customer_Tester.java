@@ -38,8 +38,8 @@ public class Customer_Tester
    @Test
    public void checkValidPlusPhineNumber()
    {
-	   testRec.SetPhone("+353491234985");
-	   assertThat(testRec.getPhone(), is(equalTo("+353491234985")));
+	   testRec.SetPhone("+353491234");
+	   assertThat(testRec.getPhone(), is(equalTo("+353491234")));
    }
    @Test
    public void CheckValid08PhoneNumber()
@@ -57,7 +57,6 @@ public class Customer_Tester
    public void check_number_contains_plus()
    {
 	   thrown.expect(IllegalArgumentException.class);
-	   thrown.expectMessage(startsWith("phone number should contain a +"));
 	   testRec.SetPhone("074 5551234");
    }
    @Test(expected = IllegalArgumentException.class)
@@ -84,7 +83,6 @@ public class Customer_Tester
    public void  check_that_plus_number_cannot_be_less_than_10()
    {
 	   thrown.expect(IllegalArgumentException.class);
-	   thrown.expectMessage(startsWith("First name can only be alphabetic"));
 	   testRec.SetPhone("+3531234");
 		
    }
