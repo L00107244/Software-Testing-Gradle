@@ -1,8 +1,15 @@
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.core.StringStartsWith.startsWith;
+import org.junit.Rule;
+import org.junit.rules.ExpectedException;
 public class Customer_Tester
 {
    private Customer testRec = new Customer("stephencurran@gmail.com", "0877718912");
+
    
    @Test
    public void CheckVailedEmail()
@@ -31,14 +38,14 @@ public class Customer_Tester
    @Test
    public void checkValidPlusPhineNumber()
    {
-	testRec.SetPhone(("+353123413"));
-	assertEquals("+353123413", testRec.getPhone());
+	   testRec.SetPhone("+353491234985");
+	   assertThat(testRec.getPhone(), is(equalTo("+353491234985")));
    }
    @Test
    public void CheckValid08PhoneNumber()
    {
-	   testRec.SetPhone("0877718912");
-	   assertEquals("0877718912", testRec.getPhone());
+		testRec.SetPhone("0877718912");
+		assertThat(testRec.getPhone(), is(equalTo("0877718912")));
    }
    @Test(expected = IllegalArgumentException.class)
    public void check_number_contains_plus_or_08()
@@ -46,11 +53,12 @@ public class Customer_Tester
 	   testRec.SetPhone("7712345679"); 
 	   assertEquals("7712345679",testRec.getPhone());
    }
-   @Test(expected = IllegalArgumentException.class)
+   @Test
    public void check_number_contains_plus()
    {
+	   thrown.expect(IllegalArgumentException.class);
+	   thrown.expectMessage(startsWith("phone number should contain a +"));
 	   testRec.SetPhone("074 5551234");
-	   assertEquals("074 5551234",testRec.getPhone());
    }
    @Test(expected = IllegalArgumentException.class)
    public void check_number_cannot_be_less_that_10()
@@ -65,16 +73,20 @@ public class Customer_Tester
 	   assertEquals("08712345612",testRec.getPhone());
    }
    @Test(expected = IllegalArgumentException.class)
-   public void check_that_plus_number_cannot_be_more_than_10()
+   public void check_that_plus_number_cannot_be_more_than_13()
    {
-	   testRec.SetPhone("+35312345667");
-	   assertEquals("+35312345667",testRec.getPhone());
+	   testRec.SetPhone("+35312345667123");
+	   assertEquals("+35312345667123",testRec.getPhone());
    }
-   @Test(expected = IllegalArgumentException.class)
-   public void check_that_plus_number_cannot_be_less_than_10()
+   @Rule
+	public ExpectedException thrown = ExpectedException.none();
+   @Test
+   public void  check_that_plus_number_cannot_be_less_than_10()
    {
+	   thrown.expect(IllegalArgumentException.class);
+	   thrown.expectMessage(startsWith("First name can only be alphabetic"));
 	   testRec.SetPhone("+3531234");
-	   assertEquals("+3531234",testRec.getPhone());
+		
    }
- 
+
 }
