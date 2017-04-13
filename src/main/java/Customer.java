@@ -20,7 +20,11 @@ private static int ID;
   this.phoneNumber=pNo;
   this.CustomerID = ID++;
  }
-
+ public static boolean validate_email(String email)
+ {
+   
+       return email.matches("^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$");
+ }
  public static boolean validate_atSymbol_in_email(String email)
  {
    
@@ -42,7 +46,7 @@ private static int ID;
 
  public void SetEmail(String email1)
  {
-	 if(validate_atSymbol_in_email(email1) && check_email_has_dot(email1)==true)
+	 if(validate_email(email1) && validate_atSymbol_in_email(email1) && check_email_has_dot(email1)==true)
 	 {
 	  this.emailAddress = email1;
 	 }

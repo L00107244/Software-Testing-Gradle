@@ -1,4 +1,3 @@
-
 public class eircode
 {
   private String eirCode  = null;
