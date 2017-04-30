@@ -6,6 +6,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
+
 public class eircode_tester 
 {
 	 private eircode testCode = new eircode("K65AS23");
@@ -28,5 +29,17 @@ public class eircode_tester
    {
 	   thrown.expect(IllegalArgumentException.class);
 	   final eircode codeToLong = new eircode("F54TY564567");
+   }
+   @Test
+   public void Test_if_code_cannot_contain_only_Letters()
+   {
+	   thrown.expect(IllegalArgumentException.class);
+	   final eircode codeToLong = new eircode("FTGDWER");
+   }
+   @Test
+   public void Test_if_code_cannot_contain_only_numbers()
+   {
+	   thrown.expect(IllegalArgumentException.class);
+	   final eircode codeToLong = new eircode("8974582");
    }
 }

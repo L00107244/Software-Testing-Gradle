@@ -16,6 +16,14 @@ public class eircode
 	  {
 		  throw new IllegalArgumentException("eircode to long: "+CanidateEirCode);
 	  }
+	  if (CanidateEirCode.matches("[a-zA-Z]+") )
+	  {
+		  throw new IllegalArgumentException("eircode must contain letters and numbers: "+CanidateEirCode);
+	  }
+	  if (CanidateEirCode.matches("[0-9]+") )
+	  {
+		  throw new IllegalArgumentException("eircode must contain Letters and numbers: "+CanidateEirCode); 
+	  }
 	  this.eirCode=CanidateEirCode;
   }
   @Override
