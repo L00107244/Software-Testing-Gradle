@@ -1,5 +1,11 @@
+/*
+ * Name Stephen Curran
+ * Student Number: L00107244
+ * E-mail L00107244@student.lyit.ie
+ */
 public class Address
 {
+	//variables
 	private final String Addressline1;
 	private final String AddressLine2;
 	private final String AddressLine3;
@@ -7,7 +13,7 @@ public class Address
 	private final String Country;
 	private final eircode eircode;
 	
-
+   //constructer
 	public Address(String Add1, String Add2, String Add3, String Add4, String Coun, eircode eircode)
 	{
 		this.Addressline1 = Add1;
@@ -17,6 +23,9 @@ public class Address
 		this.Country = Coun;
 		this.eircode = eircode;
 	}
+	/*
+	 * Get methods for each of the variables
+	 */
 	public String GetAddressLine1()
 	{
 		return Addressline1;

@@ -1,13 +1,24 @@
+/*
+ * Name Stephen Curran
+ * Student Number: L00107244
+ * E-mail L00107244@student.lyit.ie
+ */
 import java.util.Scanner;
 
 public class Name
 {	
+	/*
+	 * Variables
+	 */
 	private static final int MinAge=0;
     private static final int MaxAge=100;
 	private String title;
 	private String firstName;
 	private String surname;
 	private int Age;
+	/*
+	 * Validation
+	 */
 	 public static boolean validate_title1(String Title)
 	 {
 	   return Title.equals("Mr");
@@ -33,8 +44,9 @@ public class Name
 	 {
 	   return last_name.matches("[a-zA-záéóíú]+([ '-][a-zA-Z]+)*");
 	 }
-
-	
+     /*
+      * Constructers
+      */
      public Name(String titleIn, String Fn, String Sn, int A)
      {
       this.title= titleIn;
@@ -42,6 +54,9 @@ public class Name
       this.surname=Sn;
       this.Age = A;
      }
+     /*
+      * Set methods
+      */
      public void SetTitle(String t)
      {
      	if( validate_title1(t) || validate_title2(t) || validate_title3(t)==true)
@@ -86,6 +101,9 @@ public class Name
     	   this.Age = AgeIn;  
        }
      }
+     /*
+      * Getter methods
+      */
      public String getTitle()
      {
     	return title;

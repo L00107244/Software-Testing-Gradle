@@ -1,67 +1,46 @@
+/*
+ * Name Stephen Curran
+ * Student Number: L00107244
+ * E-mail L00107244@student.lyit.ie
+ */
 public class budget_manager 
 {
-  private double monthly_salary;
-  private double bill1;
-  private double bill2;
-  private double bill3;
-  private double TopUp;
-  private double food;
-  private double petrol;
-  private double anything;
+  private bugetMangerInterface budMan;
+	/*
+	 * Variables
+	 */
+
   private double bud;
+  private double bud2;
+  private double tax;
+
+  public void SetBudService(bugetMangerInterface budget)
+  {
+	  this.budMan = budget;
+  }
+  public double AfterBills(double monthly_salary, double bill1, double bill2, double bill3, double TopUp, double food, double petrol, double other  )
+  {
+	  bud = budMan.subtract(monthly_salary, bill1, bill2, bill3, TopUp, food, petrol, other);
+	  return bud;
+  }
+  public double Aftertax(double monthly_salary)
+  {
+	  if(monthly_salary > 3333.33)
+	  {
+	      tax = 0.40;
+		  bud2 = budMan.multiply(bud, tax);
+	  }
+	  else if( monthly_salary < 3333.33)
+	  {
+	      tax = 0.20;
+		  bud2 = budMan.multiply(monthly_salary, tax);
+		  
+	  }
+	  else
+	  {
+		  throw new IllegalArgumentException("invalied Title");
+	  }
+	  return bud2;
+  }
   
-  public budget_manager(double monsal, double bill, double bill2, double bill3, double top, double foo, double pet, double any)
-  {
-	  this.monthly_salary = monsal;
-	  this.bill1 = bill;
-	  this.bill2 = bill2;
-	  this.bill3 = bill3;
-	  this.TopUp = top;
-	  this.food = foo;
-	  this.petrol = pet;
-	  this.anything = any;
-  }
-  public void setMonthlySalary(double monSal)
-  {
-	  monthly_salary = monSal;
-  }
-  public void setbill(double bill)
-  {
-	  bill1 = bill;
-  }
-  public void setbill3(double bill)
-  {
-	  bill3 = bill;
-  }
-  public void setTopUp(double topup)
-  {
-	  TopUp = topup;
-  }
-  public void setfuel(double pet)
-  {
-	  petrol = pet;
-  }
-  public void setAnything(double any)
-  {
-	  anything = any;
-  }
-  public double getResult()
-  {
-	  bud =monthly_salary - bill1-bill2-bill3-TopUp-petrol-anything;
-	  return bud;
-  }
-  public double getResultAfterTax()
-  {
-	  double taxHigh = 0.40;
-	  double taxLow = 0.20;
-	  if(monthly_salary <= 20000)
-	  {
-	  bud =monthly_salary - bill1-bill2-bill3-TopUp-petrol-anything;
-	  }
-	  if(monthly_salary >= 40000)
-	  {
-		  bud =monthly_salary - bill1-bill2-bill3-TopUp-petrol-anything; 
-	  }
-	  return bud;
-  }
 }

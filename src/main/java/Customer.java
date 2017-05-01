@@ -1,11 +1,20 @@
+/*
+ * Name Stephen Curran
+ * Student Number: L00107244
+ * E-mail L00107244@student.lyit.ie
+ */
 public class Customer 
 {
-
+/*
+ * Variables
+ */
 private String emailAddress = null;
 private String phoneNumber = null;
 private int CustomerID;
 private static int ID;
-
+/*
+ * Constructers
+ */
  protected Customer()
  {
   this.emailAddress=null;
@@ -20,6 +29,9 @@ private static int ID;
   this.phoneNumber=pNo;
   this.CustomerID = ID++;
  }
+ /*
+  * Validation methods
+  */
  public static boolean validate_email(String email)
  {
    
@@ -43,7 +55,9 @@ private static int ID;
  {
 	 return num.contains("08");
  }
-
+/*
+ * Set methods
+ */
  public void SetEmail(String email1)
  {
 	 if(validate_email(email1) && validate_atSymbol_in_email(email1) && check_email_has_dot(email1)==true)
@@ -75,6 +89,9 @@ private static int ID;
 		throw new IllegalArgumentException("invalid phone number", null);
 	}
  }
+ /*
+  * Get methods
+  */
 public String getEmail()
 {
 	return emailAddress;

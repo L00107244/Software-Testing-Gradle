@@ -1,8 +1,18 @@
+/*
+ * Name Stephen Curran
+ * Student Number: L00107244
+ * E-mail L00107244@student.lyit.ie
+ */
 public class eircode
 {
+	/*
+	 * Variables
+	 */
   private String eirCode  = null;
   private String CanidateEirCode = null;
-  
+  /*
+   * Consturter with validation
+   */
   public eircode(String eir)
   {
 	  super();
@@ -26,11 +36,13 @@ public class eircode
 	  }
 	  this.eirCode=CanidateEirCode;
   }
+  //to string method
   @Override
   public String toString()
   {
 	  return "eircode [eircode="+eirCode+"]";
   }
+  //produce eir code
   private String generateCanEircode(String nonCanEircode)
   {
 	  String CanEircode = nonCanEircode.replaceAll("\\s+","");

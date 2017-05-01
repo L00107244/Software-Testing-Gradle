@@ -1,29 +1,53 @@
+/*
+ * Name Stephen Curran
+ * Student Number: L00107244
+ * E-mail L00107244@student.lyit.ie
+ */
 public class Education 
 {
+   /*
+    * Variables
+    */
    private String SchoolName;
    private String SchoolAddress;
    private String County;
+   private String Qualification;
    private String CollegeName;
    private String CollegeAddress;
    private String CollegeCounty;
-   
+   private String CollQualification;
+   /*
+    * Validation methods
+    */
    public static boolean validate_Entry(String Val_En)
    {
 	 return Val_En.matches("[a-zA-záéóíú]+([ '-][a-zA-Z]+)*");
    }
-   public Education(String sn, String sa, String coun, String CollName, String CollAdd, String CollCoun)
+   public static boolean validate_Entry2(String Val_En2)
+   {
+	 return Val_En2.matches("[a-zA-Z0-9]*");
+   }
+   /*
+    * Constructures
+    */
+   public Education(String sn, String sa, String coun, String Qual1, String CollName, String CollAdd, String CollCoun, String Qual2)
    {
 	   this.SchoolName = sn;
 	   this.SchoolAddress = sa;
 	   this.County = coun;
+	   this.Qualification =  Qual1;
 	   this.CollegeName = CollName;
 	   this.CollegeAddress = CollAdd;
 	   this.CollegeCounty = CollCoun;
+	   this.CollQualification = Qual2;
    }
    public Education()
    {
 	   
    }
+   /*
+    * Set methods
+    */
    public void setSchoolName(String schoolNameIn)
    {
 	  if(validate_Entry(schoolNameIn)==true)
@@ -83,13 +107,39 @@ public class Education
    {
 	   if(validate_Entry(CollCountIn)==true)
 	   {
-	   CollegeAddress = CollCountIn;
+	   CollegeCounty = CollCountIn;
 	   }
 	   else
 	   {
 		   throw new IllegalArgumentException("invalied entry");  
 	   }
    }
+   
+   public void setQualifrication(String SQualIn)
+   {
+	   if(validate_Entry(SQualIn)==true)
+	   {
+	   Qualification = SQualIn;
+	   }
+	   else
+	   {
+		   throw new IllegalArgumentException("invalied entry");  
+	   }
+   }
+   public void setCollQualifrication(String SQualIn)
+   {
+	   if(validate_Entry(SQualIn))
+	   {
+	   CollQualification = SQualIn;
+	   }
+	   else
+	   {
+		   throw new IllegalArgumentException("invalied entry");  
+	   }
+   }
+   /*
+    * Getter methods
+    */
    public String getSchoolName()
    {
 	   return SchoolName;
@@ -101,6 +151,10 @@ public class Education
    public String getSchoolCounty()
    {
 	   return County;
+   }
+   public String geQualifcation()
+   {
+	   return Qualification;
    }
    public String getCollegeName()
    {
@@ -114,5 +168,10 @@ public class Education
    {
 	   return CollegeCounty;
    }
+   public String getCollQualification()
+   {
+	   return CollQualification;
+   }
+
 
 }
