@@ -34,12 +34,12 @@ public class eircode_tester
    public void Test_if_code_cannot_contain_only_Letters()
    {
 	   thrown.expect(IllegalArgumentException.class);
-	   final eircode codeToLong = new eircode("FTGDWER");
+	   final eircode codeToconnotContainLettersOnly = new eircode("FTGDWER");
    }
    @Test
    public void Test_if_code_cannot_contain_only_numbers()
    {
 	   thrown.expect(IllegalArgumentException.class);
-	   final eircode codeToLong = new eircode("8974582");
+	   final eircode codeCannotContainOnlyNumbers = new eircode("8974582");
    }
 }
